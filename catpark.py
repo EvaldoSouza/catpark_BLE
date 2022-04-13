@@ -11,7 +11,7 @@ import dbus
 import sys
 import bluetooth_utils
 import bluetooth_constants
-#import client_discover_devices
+import client_discover_devices
 import time
 
 sys.path.insert(0, '.')
@@ -98,4 +98,4 @@ what = bluetooth_utils.dbus_to_python(device_properties_interface.Get(DEVICE_INT
 print("Printando o what")
 print(what)
 # time.sleep(30)
-# connect_profile(SERVICE_OF_DATA_UUID)
+connect_profile(SERVICE_OF_DATA_UUID)
